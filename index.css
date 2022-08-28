@@ -1,11 +1,11 @@
-.list {
+.content {
   border: 1px solid red;
   width: 1200px;
   margin: 50px auto 0;
   text-align: center;
 }
 
-.list__heading {
+.content__header {
   border: 1px saddlebrown solid;
 }
 

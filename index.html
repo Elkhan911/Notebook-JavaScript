@@ -8,12 +8,12 @@
     <title>Блокнот на JavaScript</title>
   </head>
   <body>
-    <section class="list">
-      <h1 class="list__header">Блокнот на JavaScript</h1>
+    <section class="content">
+      <h1 class="content__header">Блокнот на JavaScript</h1>
 
       <div class="notebook">
         <div class="notebook__menu">
-          <ul class="notebook__items">
+          <ul class="notebook__items" id="_list">
             <li class="notebook__item">Запись 1</li>
             <li class="notebook__item">Запись 2</li>
             <li class="notebook__item">Запись 3</li>
@@ -21,18 +21,20 @@
           </ul>
 
           <div>
-            <button class="notebook__button">Новая Запись</button>
+            <button class="notebook__button" id="_newNoteBtn">
+              Новая Запись
+            </button>
           </div>
         </div>
 
         <textarea
           class="notebook__text"
           name=""
-          id=""
+          id="_textZone"
           cols="30"
           rows="10"
         ></textarea>
-        <button class="notebook__button">Сохранить</button>
+        <button class="notebook__button" id="_saveBtn">Сохранить</button>
       </div>
     </section>
     <script src="script.js"></script>
