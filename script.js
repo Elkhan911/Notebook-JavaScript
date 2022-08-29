@@ -5,7 +5,7 @@ let textZone = document.querySelector("#_textZone");
 
 let list = document.querySelector("#_list");
 let notesCounter = 4;
-let arrOfNotes = ["запись1", "запись2", "запись3", "запись4"];
+let arrOfNotes = ["note1", "note2", "note3", "note4"];
 
 saveBtn.addEventListener("click", createNote);
 
@@ -15,7 +15,7 @@ function createNote() {
     let li = document.createElement("li");
     li.classList.add("notebook__item");
     notesCounter++;
-    li.textContent = "Запись " + notesCounter;
+    li.textContent = "note" + notesCounter;
     list.append(li);
 
     arrOfNotes.push(li.textContent);
