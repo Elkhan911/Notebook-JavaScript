@@ -9,6 +9,7 @@
   border: 1px saddlebrown solid;
   width: 80%;
   margin: auto;
+  font-size: 40px;
 }
 
 .notebook {
@@ -57,6 +58,8 @@
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: normal;
 }
 
 .element__display_off {
