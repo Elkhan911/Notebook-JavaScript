@@ -7,6 +7,8 @@
 
 .content__header {
   border: 1px saddlebrown solid;
+  width: 80%;
+  margin: auto;
 }
 
 .notebook {
@@ -55,4 +57,8 @@
   box-sizing: border-box;
   padding: 10px;
   margin-bottom: 10px;
+}
+
+.element__display_off {
+  display: none;
 }

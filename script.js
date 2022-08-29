@@ -1,19 +1,26 @@
+const notebook = document.querySelector("#_notebook");
 const saveBtn = document.querySelector("#_saveBtn");
 const newNoteBtn = document.querySelector("#_newNoteBtn");
-const textZone = document.querySelector("#_textZone");
+let textZone = document.querySelector("#_textZone");
 
-// массив записей в блокноте
+let list = document.querySelector("#_list");
 let notesCounter = 4;
-let arrOfNotes = [];
+let arrOfNotes = ["запись1", "запись2", "запись3", "запись4"];
 
-saveBtn.addEventListener("click", function () {
-  let list = document.querySelector("#_list");
+saveBtn.addEventListener("click", createNote);
 
+//функция создания новой записи
+function createNote() {
   if (textZone.value !== "") {
     let li = document.createElement("li");
     li.classList.add("notebook__item");
     notesCounter++;
     li.textContent = "Запись " + notesCounter;
     list.append(li);
+
+    arrOfNotes.push(li.textContent);
+    console.log(arrOfNotes);
+
+    textZone.value = "";
   }
-});
+}
