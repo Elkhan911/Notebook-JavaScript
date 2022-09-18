@@ -1,12 +1,11 @@
 .content {
-  border: 1px solid red;
+  border: 1px solid black;
   width: 1200px;
   margin: 50px auto 0;
   text-align: center;
 }
 
 .content__header {
-  border: 1px saddlebrown solid;
   width: 80%;
   margin: auto;
   font-size: 40px;
@@ -14,13 +13,12 @@
 
 .notebook {
   width: 500px;
-  border: 1px solid red;
   margin: 50px auto;
   position: relative;
 }
 
 .notebook__menu {
-  border: 1px solid saddlebrown;
+  border: 1px solid black;
   width: 150px;
   position: absolute;
   right: 105%;
@@ -60,8 +58,4 @@
   margin-bottom: 10px;
   font-size: 20px;
   font-weight: normal;
-}
-
-.element__display_off {
-  display: none;
 }
